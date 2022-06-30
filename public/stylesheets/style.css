@@ -1,0 +1,126 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
+
+.section1{
+    position: relative;
+    width:100%;
+    min-height: 13vh;
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    font-family: "Roboto Flex", sans-serif;
+    position: absolute;
+    left:0;
+    width:100%;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 200px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color:#3b2b1d;
+    font-weight: 600;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 110%;
+    transition-duration: 0.4s;
+}
+
+.hovlink:hover{
+    color:#f5c276
+}
+
+.section2{
+    min-height: 84vh;
+    background-image: url('assets/background.png');
+    overflow-y: auto;
+}
+
+div{
+    padding:1%;
+}
+
+.principal{
+    color: #3b2b1d;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 160%;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.principal:hover{
+    color:#3b2b1d
+}
+
+.subtitle{
+    color:#3b2b1d;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 120%;
+    text-align: center; font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 1%;
+}
+
+.lbutton{
+    padding: 1%;
+    text-align: center;
+}
+
+.loginbutton{
+        padding: 1%;
+        background-color: #f1ae70;
+        border: none;
+        color: #3b2b1d;
+        font-weight: 600;
+        font-family: 'Roboto Flex', sans-serif;
+        padding: 15px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 18px;
+        transition-duration: 0.4s;
+}
+
+.loginbutton:hover{
+    color:#f1ae70;
+    background-color: #3b2b1d;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 3vh;
+    font-size: 60%;
+    text-align: center;
+    padding-top: 5px;
+    background-color: white;
+}
