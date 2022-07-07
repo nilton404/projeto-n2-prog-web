@@ -5,10 +5,17 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var indexDarkRouter = require('./routes/index-dark');
+
 var ferramentasRouter = require('./routes/ferramentas');
+var ferramentasDarkRouter = require('./routes/ferramentas-dark');
+
 var tutoriaisRouter = require('./routes/tutoriais');
+var tutoriaisDarkRouter = require('./routes/tutoriais-dark');
+
 var loginRouter = require('./routes/login');
-var registroRouter = require('./routes/registro');
+var loginDarkRouter = require('./routes/login-dark');
+
 
 var app = express();
 
@@ -23,10 +30,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/index-dark', indexDarkRouter);
+
 app.use('/tutoriais', tutoriaisRouter);
+app.use('/tutoriais-dark', tutoriaisDarkRouter);
+
 app.use('/ferramentas', ferramentasRouter);
+app.use('/ferramentas-dark', ferramentasDarkRouter);
+
 app.use('/login', loginRouter);
-app.use('/registro', registroRouter);
+app.use('/login-dark', loginDarkRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

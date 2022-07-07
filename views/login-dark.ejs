@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="stylesheets/login-dark.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
     <title>Callart - Email</title>
     <script href="javascripts/script.js"></script>
@@ -13,11 +13,11 @@
 <body>
     <section class="section1">
     <header>
-        <div class="logo"><a href="/"><img src="stylesheets/assets/placeholder.png" class="logo"></a></div>
+        <div class="logo"><a href="/index-dark"><img src="stylesheets/assets/placeholder.png" class="logo"></a></div>
             <ul>
-                <li><a href="/ferramentas" class="hovlink">Ferramentas</a></li>
-                <li><a href="/tutoriais" class="hovlink">Tutoriais</a></li>
-                <li><a href="/login" class="hovlink">Email</a></li>
+                <li><a href="/ferramentas-dark" class="hovlink">Ferramentas</a></li>
+                <li><a href="/tutoriais-dark" class="hovlink">Tutoriais</a></li>
+                <li><a href="/login-dark" class="hovlink">Email</a></li>
             </ul>
     </header>
 
@@ -29,11 +29,11 @@
         <form action="" class="formstyle" id="authLogin">
         <div class="label">Digite seu email:</div>
         <div class="paddingdiv">
-        <input type="text" placeholder="Enter Email" name="Lemail">
+        <input type="text" placeholder="Enter Email" name="Lemail" required>
         </div>
 
         <div class="paddingdiv">
-        <input type="submit" class="botaologin" value="Submeter" onclick="Func()">
+            <input type="submit" class="botaologin" value="Submeter" onclick="Func()">
         </div>
         <div class="infoskk"> Utilizamos seu email para enviar atualizações <br>e infos sobre o site.</div>
         </form>
@@ -43,8 +43,9 @@
     </div>
 </section>
 <section class="footer">
-    <a href="/login-dark" class="switchmode">Visualizar site em modo escuro</a>
+    <a href="/login" class="switchmode">Visualizar site em modo claro</a>
 </section>
 </body>
-
+<script>
+</script>
 </html>
